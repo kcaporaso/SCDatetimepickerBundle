@@ -12,6 +12,9 @@ Please feel free to contribute, to fork, to send merge request and to create tic
 
 ```bash
 php composer.phar require mwsimple/scdatetimepicker-bundle
+
+sf4+
+composer require kcaporaso/scdatetimepicker-bundle
 ```
 
 ### Step 2: Enable the bundle
@@ -27,6 +30,12 @@ public function registerBundles()
         new SC\DatetimepickerBundle\SCDatetimepickerBundle(),
     );
 }
+
+sf4+
+Add to ./config/bundles.php:
+
+SC\DatetimepickerBundle\SCDatetimepickerBundle::class => ['all' => true],
+
 ```
 
 ``` yml
