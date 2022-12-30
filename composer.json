@@ -1,5 +1,5 @@
 {
-    "name": "mwsimple/scdatetimepicker-bundle",
+    "name": "kcaporaso/scdatetimepicker-bundle",
     "description": "Symfony bundle for Bootstrap DateTime picker",
     "keywords": ["symfony", "bootstrap", "bundle", "picker", "datepicker", "timepicker"],
     "type": "symfony-bundle",
