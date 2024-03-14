@@ -1,7 +1,7 @@
 
 
 {% block collot_datetime_widget %}
-{% spaceless %}
+{% apply spaceless %}
     {% if widget == "single_text" %}
         {{ block("form_widget_simple") }}
     {% else %}
@@ -19,7 +19,5 @@
             {{ block("hidden_widget") }}
         </div>
     {% endif %}
-{% endspaceless %}
+{% endapply %}
 {% endblock collot_datetime_widget %}
-
-
