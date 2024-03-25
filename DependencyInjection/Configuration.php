@@ -12,7 +12,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 class Configuration implements ConfigurationInterface
 {
     /**
-     * {@inheritDoc}
+     * @return TreeBuilder
      */
     public function getConfigTreeBuilder()
     {
