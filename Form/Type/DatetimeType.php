@@ -55,7 +55,7 @@ class DatetimeType extends AbstractType
     /**
     * {@inheritdoc}
     */
-    public function buildView(FormView $view, FormInterface $form, array $options)
+    public function buildView(FormView $view, FormInterface $form, array $options): void
     {
         $pickerOptions = array_merge($this->options, $options['pickerOptions']);
 
@@ -81,7 +81,7 @@ class DatetimeType extends AbstractType
     /**
     * {@inheritdoc}
     */
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $configs = $this->options;
 
@@ -157,17 +157,17 @@ class DatetimeType extends AbstractType
      *
      * @see \Symfony\Component\Form\AbstractType::getParent()
      */
-    public function getParent()
+    public function getParent(): ?string
     {
         return \Symfony\Component\Form\Extension\Core\Type\DateTimeType::class;
     }
     
-    public function getName()
+    public function getName(): string
     {
         return $this->getBlockPrefix();
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'collot_datetime';
     }
